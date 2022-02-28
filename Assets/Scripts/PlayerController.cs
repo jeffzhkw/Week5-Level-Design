@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
                 isGrounded = false;
             }
         }
-        //playerRb.velocity = new Vector2(movement.x * speed, playerRb.velocity.y);
+        playerRb.velocity = new Vector2(movement.x * speed, playerRb.velocity.y);
         
     }
 
