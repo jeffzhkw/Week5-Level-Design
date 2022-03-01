@@ -658,6 +658,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 919157334, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: _slider
       value: 
@@ -729,14 +733,6 @@ PrefabInstance:
     - target: {fileID: 4088653342188410108, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8793737346665795916, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8793737346665795918, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6aedac899a84466488fc45425ff302a, type: 3}
