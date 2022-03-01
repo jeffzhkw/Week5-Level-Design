@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
     private Rigidbody2D playerRb;
     private bool isGrounded;
+    bool facingRight = true;
 
 
     void Start()
@@ -31,6 +32,17 @@ public class PlayerController : MonoBehaviour
             }
         }
         playerRb.velocity = new Vector2(movement.x * speed, playerRb.velocity.y);
+        Debug.Log(movement.x);
+
+        if (movement.x < 0 && facingRight)
+        {
+            flip();
+        }
+        else if(movement.x > 0 && !facingRight)
+        {
+            flip();
+        }
+
         
     }
 
@@ -38,5 +50,11 @@ public class PlayerController : MonoBehaviour
     {
         //check for ground collision.
         isGrounded = true;
+    }
+
+    void flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0f,180f,0f);
     }
 }
