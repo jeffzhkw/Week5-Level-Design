@@ -699,11 +699,35 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: m_Size.x
-      value: 0.97
+      value: 0.36500072
       objectReference: {fileID: 0}
     - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: m_Size.y
-      value: 0.97
+      value: 0.72037554
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.010734081
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.11300504
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: _slider
@@ -777,6 +801,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4088653342188410107, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088653342188410107, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088653342188410107, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4879508869444944426, guid: 94bc66bb697c74a81b2b17c6e38cfbd0, type: 3}
     - target: {fileID: 4088653342188410108, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: m_Name
       value: Player
