@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour
             for (int i = 0; i < _allEnemyItems.Count; i++)
             {
                 var item = _allEnemyItems[i];
-                if (item.IsDead == false && Mathf.Abs(Vector2.Distance(item.transform.localPosition, transform.localPosition)) <= 2)
+                if (item.IsDead == false && Mathf.Abs(Vector2.Distance(item.transform.localPosition, transform.localPosition)) <= 3)
                 {
                     item.SetVacuum(false);
                     item.IsDead = true;
