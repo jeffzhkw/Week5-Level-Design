@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject _lightRoot;
     public Slider _slider;
+    public Slider _powerSlider;
     public Text _sliderText;
     public GameObject _winRoot, _loseRoot;
     public Button _btnWinRestart, _btnLoseRestart;
@@ -25,6 +26,15 @@ public class PlayerController : MonoBehaviour
     public int _unLockLightAddHp = 1;
     public float _lockLightTickTime = 1;
     public float _unLockLightTickTime = 2;
+
+
+    public int _powerAdd = 1;
+    public int _powerSub = 1;
+    public float _powerTickTime = 1;
+    float _powerUpdateTime = 0;
+
+    public int MaxPower = 100;
+    public int CurrentPower = 100;
 
     List<EnemyItem> _allEnemyItems = new List<EnemyItem>();
     void Start()
@@ -55,9 +65,12 @@ public class PlayerController : MonoBehaviour
         if (_canController == false) { return; }
         if (Input.GetKeyDown(KeyCode.F))
         {
-            _isFlashLight = !_isFlashLight;
-            _lightTickTime = 0;
-            _lightRoot.SetActive(_isFlashLight);
+            if (CurrentPower > 0)
+            {
+                _isFlashLight = !_isFlashLight;
+                _lightTickTime = 0;
+                _lightRoot.SetActive(_isFlashLight);
+            }
         }
         if (_isFlashLight)
         {
@@ -93,6 +106,26 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        //Power Check
+        if (_isFlashLight)
+        {
+            _powerUpdateTime += Time.deltaTime;
+            if (_powerUpdateTime >= _powerTickTime)
+            {
+                _powerUpdateTime = 0;
+                CurrentPower -= _powerSub;
+            }
+        }
+        else
+        {
+            _powerUpdateTime += Time.deltaTime;
+            if (_powerUpdateTime >= _powerTickTime)
+            {
+                _powerUpdateTime = 0;
+                CurrentPower += _powerAdd;
+            }
+        }
+        CheckPower();
         movement.x = Input.GetAxisRaw("Horizontal");
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
         {
@@ -182,5 +215,23 @@ public class PlayerController : MonoBehaviour
         {
             _loseRoot.SetActive(true);
         }
+    }
+    void CheckPower()
+    {
+        if (CurrentPower > MaxPower)
+        {
+            CurrentPower = MaxPower;
+        }
+        else if (CurrentPower < 0)
+        {
+            CurrentPower = 0;
+
+            if (_isFlashLight)
+            {
+                _isFlashLight = !_isFlashLight;
+                _lightRoot.SetActive(_isFlashLight);
+            }
+        }
+        _powerSlider.value = CurrentPower / 1.0f / MaxPower;
     }
 }
