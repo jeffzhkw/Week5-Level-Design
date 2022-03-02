@@ -99,21 +99,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc1e44c212a84667876728b6d095e7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lightRoot: {fileID: 8793737346665795916}
+  _lightRoot: {fileID: 8793737347870773354}
   _slider: {fileID: 0}
+  _powerSlider: {fileID: 0}
   _sliderText: {fileID: 0}
   _winRoot: {fileID: 0}
   _loseRoot: {fileID: 0}
   _btnWinRestart: {fileID: 0}
   _btnLoseRestart: {fileID: 0}
-  speed: 8
-  jumpForce: 8
+  speed: 10
+  jumpForce: 6
   _currentHp: 100
   MaxHp: 100
   _lockLightSubHp: 2
   _unLockLightAddHp: 1
   _lockLightTickTime: 1
   _unLockLightTickTime: 2
+  _powerAdd: 1
+  _powerSub: 1
+  _powerTickTime: 1
+  MaxPower: 100
+  CurrentPower: 100
 --- !u!50 &1256484885
 Rigidbody2D:
   serializedVersion: 4
@@ -134,7 +140,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1256484889
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -159,7 +165,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.97, y: 0.97}
   m_EdgeRadius: 0
 --- !u!1 &8793737346665795916
 GameObject:
@@ -219,7 +225,7 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0.75
+  m_PointLightInnerRadius: 0.6
   m_PointLightOuterRadius: 1
   m_PointLightDistance: 3
   m_PointLightQuality: 1

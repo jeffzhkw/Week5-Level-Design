@@ -697,13 +697,13 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 1256484885, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: m_Constraints
-      value: 4
+    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.97
       objectReference: {fileID: 0}
-    - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: speed
-      value: 10
+    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: _slider
@@ -717,14 +717,6 @@ PrefabInstance:
       propertyPath: _loseRoot
       value: 
       objectReference: {fileID: 818161043}
-    - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: jumpForce
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: _lightRoot
-      value: 
-      objectReference: {fileID: 1393331008}
     - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: _sliderText
       value: 
@@ -788,10 +780,6 @@ PrefabInstance:
     - target: {fileID: 4088653342188410108, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8793737346665795918, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: m_PointLightInnerRadius
-      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6aedac899a84466488fc45425ff302a, type: 3}
@@ -1133,11 +1121,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1393331008 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8793737347870773354, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-  m_PrefabInstance: {fileID: 1164829257}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1519687743
 GameObject:
   m_ObjectHideFlags: 0
