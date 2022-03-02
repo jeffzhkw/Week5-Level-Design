@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Events;
 public class PlayerController : MonoBehaviour
 {
     public GameObject _lightRoot;
@@ -11,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public Text _sliderText;
     public GameObject _winRoot, _loseRoot;
     public Button _btnWinRestart, _btnLoseRestart;
+    public Animator animator;
 
     public float speed;
     public float jumpForce;
@@ -19,7 +21,6 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D playerRb;
     private bool isGrounded;
 
-    bool facingRight = true;
     public int _currentHp = 100;
     public int MaxHp = 100;
     public int _lockLightSubHp = 2;
@@ -35,6 +36,10 @@ public class PlayerController : MonoBehaviour
 
     public int MaxPower = 100;
     public int CurrentPower = 100;
+
+    public class BoolEvent : UnityEvent<bool> { }
+	public BoolEvent OnCrouchEvent;
+
 
     List<EnemyItem> _allEnemyItems = new List<EnemyItem>();
     void Start()
@@ -126,6 +131,7 @@ public class PlayerController : MonoBehaviour
             }
         }
         CheckPower();
+
         movement.x = Input.GetAxisRaw("Horizontal");
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
         {
@@ -135,6 +141,7 @@ public class PlayerController : MonoBehaviour
                 isGrounded = false;
                 _checkJump = true;
                 _tickTime = 0;
+                animator.SetBool("isJumping", true);
             }
         }
         playerRb.velocity = new Vector2(movement.x * speed, playerRb.velocity.y);
@@ -153,6 +160,9 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+
+        // Animation
+        animator.SetFloat("speed", Mathf.Abs(movement.x));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -234,4 +244,5 @@ public class PlayerController : MonoBehaviour
         }
         _powerSlider.value = CurrentPower / 1.0f / MaxPower;
     }
+
 }
