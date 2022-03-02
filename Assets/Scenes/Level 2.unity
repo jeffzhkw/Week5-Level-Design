@@ -8183,17 +8183,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8572894623783357853, guid: 6c850d0df0278154b8c2be1f482020e0, type: 3}
   m_PrefabInstance: {fileID: 866120337}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &866120339 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8572894622855596792, guid: 6c850d0df0278154b8c2be1f482020e0, type: 3}
-  m_PrefabInstance: {fileID: 866120337}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &953850620
 GameObject:
   m_ObjectHideFlags: 0
@@ -9825,54 +9814,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 919157334, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 519420031}
-    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: m_Size.x
-      value: 0.34969014
-      objectReference: {fileID: 0}
-    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: m_Size.y
-      value: 0.72876847
-      objectReference: {fileID: 0}
-    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.034461707
-      objectReference: {fileID: 0}
-    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.12061578
-      objectReference: {fileID: 0}
-    - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: _slider
-      value: 
-      objectReference: {fileID: 1791237183}
-    - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: _winRoot
-      value: 
-      objectReference: {fileID: 360593460}
-    - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: _loseRoot
-      value: 
-      objectReference: {fileID: 517192210}
-    - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: _sliderText
-      value: 
-      objectReference: {fileID: 139468837}
-    - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: _powerSlider
-      value: 
-      objectReference: {fileID: 866120339}
-    - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: _btnWinRestart
-      value: 
-      objectReference: {fileID: 555156793}
-    - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: _btnLoseRestart
-      value: 
-      objectReference: {fileID: 1735720461}
     - target: {fileID: 4088653342188410106, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -9917,10 +9858,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4088653342188410107, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 4879508869444944426, guid: 94bc66bb697c74a81b2b17c6e38cfbd0, type: 3}
     - target: {fileID: 4088653342188410108, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: m_Name
       value: Player
