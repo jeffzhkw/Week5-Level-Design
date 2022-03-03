@@ -618,7 +618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6857544931494384973, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
       propertyPath: m_Text
-      value: You loses
+      value: You lose
       objectReference: {fileID: 0}
     - target: {fileID: 6857544931627206124, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
       propertyPath: m_AnchorMax.x
