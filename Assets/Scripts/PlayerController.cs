@@ -146,6 +146,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("isJumping", true);
             }
         }
+        //transform.Translate(movement.x * speed * Time.deltaTime, 0, 0);
         playerRb.velocity = new Vector2(movement.x * speed, playerRb.velocity.y);
         playerRb.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
 
@@ -266,13 +267,15 @@ public class PlayerController : MonoBehaviour
     private void Crouch()
     {
         playerBox.size = new Vector2 (playerBox.size.x, 0.48f);
+        //playerBox.offset = new Vector2(playerBox.offset.x, -0.12f);
         animator.SetBool("isCrouching", true);
         speed = speed * 0.5f;
     }
 
     private void Stand()
     {
-        playerBox.size = new Vector2(playerBox.size.x, 0.75f);
+        playerBox.size = new Vector2(playerBox.size.x, 0.74f);
+        //playerBox.offset = new Vector2(playerBox.offset.x, -0.1f);
         animator.SetBool("isCrouching", false);
         speed = speed * 2;
     }
