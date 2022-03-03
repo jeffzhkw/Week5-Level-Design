@@ -202,6 +202,7 @@ public class PlayerController : MonoBehaviour
     void SetDead()
     {
         _canController = false;
+        SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Die);
         _loseRoot.SetActive(true);
     }
 
