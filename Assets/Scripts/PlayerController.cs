@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour
         CheckPower();
 
         movement.x = Input.GetAxisRaw("Horizontal");
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isGrounded)
             {
