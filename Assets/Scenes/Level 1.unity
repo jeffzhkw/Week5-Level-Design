@@ -616,7 +616,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6857544930760303104, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 682e0b54f8b68486fa6418135e822e72, type: 3}
     - target: {fileID: 6857544931036436699, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 682e0b54f8b68486fa6418135e822e72, type: 3}
+    - target: {fileID: 6857544931397930242, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 682e0b54f8b68486fa6418135e822e72, type: 3}
@@ -624,6 +632,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: You lose
       objectReference: {fileID: 0}
+    - target: {fileID: 6857544931494384973, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 682e0b54f8b68486fa6418135e822e72, type: 3}
     - target: {fileID: 6857544931627206124, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -644,6 +656,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: You win
       objectReference: {fileID: 0}
+    - target: {fileID: 6857544932344314485, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 682e0b54f8b68486fa6418135e822e72, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
 --- !u!114 &871741660 stripped
