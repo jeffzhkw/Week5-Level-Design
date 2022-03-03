@@ -266,12 +266,14 @@ public class PlayerController : MonoBehaviour
     private void Crouch()
     {
         playerBox.size = new Vector2 (playerBox.size.x, 0.48f);
+        animator.SetBool("isCrouching", true);
         speed = speed * 0.5f;
     }
 
     private void Stand()
     {
         playerBox.size = new Vector2(playerBox.size.x, 0.75f);
+        animator.SetBool("isCrouching", false);
         speed = speed * 2;
     }
 }
