@@ -867,22 +867,6 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: m_Size.x
-      value: 0.36509597
-      objectReference: {fileID: 0}
-    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: m_Size.y
-      value: 0.7207708
-      objectReference: {fileID: 0}
-    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.006745167
-      objectReference: {fileID: 0}
-    - target: {fileID: 1256484889, guid: c6aedac899a84466488fc45425ff302a, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.114614576
-      objectReference: {fileID: 0}
     - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: _slider
       value: 

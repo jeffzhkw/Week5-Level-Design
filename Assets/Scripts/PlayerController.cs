@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 movement;
     private Rigidbody2D playerRb;
+    private BoxCollider2D playerBox;
     private bool isGrounded;
 
     public int _currentHp = 100;
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
+        playerBox = GetComponent<BoxCollider2D>();
 
         _allEnemyItems.AddRange(GameObject.FindObjectsOfType<EnemyItem>());
 
@@ -161,6 +163,21 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Debug.Log("Pressed");
+            Crouch();
+        }
+
+        else if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            Debug.Log("Up");
+            Stand();
+        }
+
+
+
+
         // Animation
         animator.SetFloat("speed", Mathf.Abs(movement.x));
     }
@@ -246,4 +263,15 @@ public class PlayerController : MonoBehaviour
         _powerSlider.value = CurrentPower / 1.0f / MaxPower;
     }
 
+    private void Crouch()
+    {
+        playerBox.size = new Vector2 (playerBox.size.x, 0.48f);
+        speed = speed * 0.5f;
+    }
+
+    private void Stand()
+    {
+        playerBox.size = new Vector2(playerBox.size.x, 0.75f);
+        speed = speed * 2;
+    }
 }
