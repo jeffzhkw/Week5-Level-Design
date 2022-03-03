@@ -616,6 +616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6857544931036436699, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 682e0b54f8b68486fa6418135e822e72, type: 3}
     - target: {fileID: 6857544931494384973, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
       propertyPath: m_Text
       value: You lose
@@ -628,12 +632,31 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6857544932304103021, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 682e0b54f8b68486fa6418135e822e72, type: 3}
+    - target: {fileID: 6857544932304103023, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 45.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6857544932344314485, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
       propertyPath: m_Text
       value: You win
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
+--- !u!114 &871741660 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6857544931036436699, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
+  m_PrefabInstance: {fileID: 818161039}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &879484169 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6857544931597165761, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
@@ -752,17 +775,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6857544932304103023, guid: 191a096facb4b0e45bf4529c9ab67dde, type: 3}
   m_PrefabInstance: {fileID: 818161039}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1105901657 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8572894623783357851, guid: 6c850d0df0278154b8c2be1f482020e0, type: 3}
-  m_PrefabInstance: {fileID: 8572894623909799374}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1143998747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -878,7 +890,7 @@ PrefabInstance:
     - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: _sliderText
       value: 
-      objectReference: {fileID: 1105901657}
+      objectReference: {fileID: 871741660}
     - target: {fileID: 1465810230419088105, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: _powerSlider
       value: 
@@ -954,6 +966,14 @@ PrefabInstance:
     - target: {fileID: 8793737346665795918, guid: c6aedac899a84466488fc45425ff302a, type: 3}
       propertyPath: m_PointLightInnerRadius
       value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793737347870773355, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793737347870773355, guid: c6aedac899a84466488fc45425ff302a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.062
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6aedac899a84466488fc45425ff302a, type: 3}
@@ -4757,6 +4777,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8572894623783357851, guid: 6c850d0df0278154b8c2be1f482020e0, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 682e0b54f8b68486fa6418135e822e72, type: 3}
     - target: {fileID: 8572894623783357852, guid: 6c850d0df0278154b8c2be1f482020e0, type: 3}
       propertyPath: m_Name
       value: Power
@@ -4827,7 +4851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8572894623783357853, guid: 6c850d0df0278154b8c2be1f482020e0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 70
+      value: 59.2
       objectReference: {fileID: 0}
     - target: {fileID: 8572894623783357853, guid: 6c850d0df0278154b8c2be1f482020e0, type: 3}
       propertyPath: m_AnchoredPosition.y
