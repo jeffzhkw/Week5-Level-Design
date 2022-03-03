@@ -12,12 +12,11 @@ public class SfxManager : MonoBehaviour
 
     private void Awake()
     {
+        sfxInstance = this;
         if (sfxInstance != null && sfxInstance != this)
         {
             Destroy(this.gameObject);
         }
-
-        sfxInstance = this;
         DontDestroyOnLoad(this);
     }
 }
