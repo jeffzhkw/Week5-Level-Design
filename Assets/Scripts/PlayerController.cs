@@ -135,6 +135,17 @@ public class PlayerController : MonoBehaviour
         CheckPower();
 
         movement.x = Input.GetAxisRaw("Horizontal");
+        Vector3 playerScale = transform.localScale;
+        if(movement.x < 0)
+        {
+            playerScale.x = -2;
+        }
+        if (movement.x > 0)
+        {
+            playerScale.x = 2;
+        }
+        transform.localScale = playerScale;
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isGrounded)
@@ -269,7 +280,7 @@ public class PlayerController : MonoBehaviour
         playerBox.size = new Vector2 (playerBox.size.x, 0.48f);
         //playerBox.offset = new Vector2(playerBox.offset.x, -0.12f);
         animator.SetBool("isCrouching", true);
-        speed = speed * 0.5f;
+        speed = speed * 0.50f;
     }
 
     private void Stand()
